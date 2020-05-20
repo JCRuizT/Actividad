@@ -7,11 +7,34 @@
 <style>
         
 </style>
+<script>
+    window.addEventListener("DOMContendLoaded",function(){
+        const pages = {
+            layout
+        };
+        
+        const list = document.querySelector("list");
+        
+        list.forEach((valor, indice, array) =>{
+            let li = document.createElement("li");
+            li.className = "item-menu";
+            list.appendChild(li);
+            let a = document.createElement("a");
+            a.textContent = valor;
+            a.setAttribute("href",valor);
+            li.appendChild(a);
+        });
+        
+    },false)  
+</script>
 </head>
 <body>
 
 <div class="container">
-menu
+    <ul id="list">
+        
+    </ul>
+    <iframe id="visor"></iframe>
 </div>
 </body>
 </html>
