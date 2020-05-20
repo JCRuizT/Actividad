@@ -15,7 +15,8 @@
         
         const list = document.querySelector("list");
         
-        list.forEach((valor, indice, array) =>{
+        for(let i = 0; i<pages.length; i++){
+                
             let li = document.createElement("li");
             li.className = "item-menu";
             list.appendChild(li);
@@ -23,7 +24,7 @@
             a.textContent = valor;
             a.setAttribute("href",valor);
             li.appendChild(a);
-        });
+        }
         
     },false)  
 </script>
