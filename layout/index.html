@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Actividad - Julio Ruiz</title>
+<style>
+         *{
+         margin:0;
+         padding:0;
+         box-sizing: border-box;
+         }
+         .container{
+         width:100%;
+         min-height: 100vh;
+         height:auto;
+         }
+         .header,.aside{
+         background-color:#4cff4c;
+         border:2px solid orange;
+         }
+         .header{
+         display:flex;
+         justify-content:space-around;
+         align-items:center;
+         height:80px;
+         }
+         .logo,.menu{
+         height:70%;
+         }
+         .logo{
+         background-color:#d96d01;
+         flex-basis:15%;
+         }
+         .menu{
+         background-color:#026cda;
+         flex-basis:60%;
+         }
+         .main{
+         display:flex;
+         }
+         .aside,.layout-container{
+         min-height:100vh;
+         height:auto;
+         }
+         .aside{
+         flex:1;
+         padding:10px;
+         }
+         .layout-container{
+         flex:5;
+         background-color:#00aacd;
+         }
+         .item-aside{
+         border:2px solid #000;
+         height:40px;
+         margin-top:5px;
+         }
+         .white{
+         background-color:#fff;
+         }
+         .layout{
+         display:flex;
+         }
+         .flex-column{
+         flex-direction:column;
+         }
+         .c-layout-1{
+         flex-grow:1;
+         }
+         .c-layout-2{
+         flex-grow:2;
+         }
+         .style-default,.style-x2,.style-x3{
+         border:2px solid #000;
+         }
+         .style-default{
+         background-color: #fff;
+         height: 40px;
+         }
+         .style-x2{
+         height: 83px;
+         }
+         .style-x3{
+         height: 126px;
+         }
+         .margin{ 
+         margin-left:2px;
+         margin-right:2px;
+         margin-top:3px;
+         }
+         .column{
+         flex-direction:column;
+         }
+         .row-reverse{
+         flex-direction:row-reverse;
+         }
+
+         .orange{
+           background-color:#d96d01;
+         }
+         .green{
+           background-color:#00d900;
+         }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <div class="logo"></div>
+    <div class="menu"></div>
+  </div>
+  
+  <div class="main">
+    <div class="aside">
+      <div class="item-aside"></div>
+      <div class="item-aside"></div>
+      <div class="item-aside"></div>
+      <div class="item-aside"></div>
+      <div class="item-aside"></div>
+      <div class="item-aside"></div>
+      <div class="item-aside"></div>
+      <div class="item-aside"></div>
+      <div class="item-aside"></div>
+      <div class="item-aside"></div>
+      <div class="item-aside"></div>
+      <div class="item-aside"></div>
+      <div class="item-aside"></div>
+    </div>
+
+    <div class="layout-container">
+      <div class="layout">
+
+        <div class="c-layout-1">
+           <div class="style-default margin"></div>
+           <div class="style-default margin"></div>
+           <div class="style-x3 margin green"></div>
+        </div>
+
+        <div class="c-layout-2 layout column">
+          <div class="layout">
+            <div class="c-layout-1 style-default margin"></div>
+            <div class="c-layout-2 style-default margin"></div>
+          </div>
+
+          <div class="layout">
+            <div class="c-layout-2 layout column">
+              <div class="c-layout-1 style-default margin"></div>
+              <div class="c-layout-1 layout">
+                <div class="c-layout-1 style-default margin"></div>
+                <div class="c-layout-1 style-default margin"></div>
+              </div>
+            </div>
+            <div class="c-layout-1 style-x2 margin orange"></div>
+          </div>
+
+          <div class="layout column">
+            <div class="c-layout-1 style-default margin"></div>
+            <div class="c-layout-2 style-default margin"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="layout row-reverse">
+
+        <div class="c-layout-1">
+           <div class="style-default margin"></div>
+           <div class="style-default margin"></div>
+           <div class="style-x3 margin orange"></div>
+        </div>
+
+        <div class="c-layout-2 layout column">
+          <div class="layout row-reverse">
+            <div class="c-layout-1 style-default margin"></div>
+            <div class="c-layout-2 style-default margin"></div>
+          </div>
+
+          <div class="layout row-reverse">
+            <div class="c-layout-2 layout column">
+              <div class="c-layout-1 style-default margin"></div>
+              <div class="c-layout-1 layout">
+                <div class="c-layout-1 style-default margin"></div>
+                <div class="c-layout-1 style-default margin"></div>
+              </div>
+            </div>
+            <div class="c-layout-1 style-x2 margin orange"></div>
+          </div>
+
+          <div class="layout column">
+            <div class="c-layout-1 style-default margin"></div>
+            <div class="c-layout-2 style-default margin"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
